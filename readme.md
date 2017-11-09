@@ -58,6 +58,10 @@ styles/                         # Plain old css
 
 When you create new transcrypt scripts, they should be placed in `scripts/`.  Be sure to reference them in `index.html`.
 
+## Where to Start
+
+Start by reading `scripts/index.py` and `scripts/clock.py`.  These are the primary files of the project.
+
 
 ## Status and Future
 

@@ -1,6 +1,6 @@
 ##
 ##  Author: Conan Albrecht <doconix@gmail.com>
-##  License: Apache Open Source
+##  License: Apache 2.0 Open Source
 ##  November, 2017
 ##
 __pragma__('kwargs')
