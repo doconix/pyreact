@@ -12,7 +12,7 @@ This is where `PyReact` and this demo come in.  **`PyReact = React + Transcrypt`
 
 ## The Finished Product
 
-This demo project makes the following page.  The clock upates every 200 ms and is clickable.
+This demo project makes the following page.  The clock upates every 200 ms and is clickable (but not in this png image :).
 
 ![Screenshot](screenshot.png "Finished Demo")
 
