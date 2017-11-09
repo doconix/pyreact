@@ -1,5 +1,5 @@
 "use strict";
-// Transcrypt'ed from Python, 2017-11-09 11:45:00
+// Transcrypt'ed from Python, 2017-11-09 12:29:44
 function pyreact () {
    var __symbols__ = ['__py3.6__', '__esv6__'];
     var __all__ = {};

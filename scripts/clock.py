@@ -57,5 +57,7 @@ class ClockNumber(pyreact.Component):
 
     def render(self):
         # example of returning a string directly
+        # transcrypt does .format(), but only at a basic level
+        # so using the JS .padStart() instead
         return str(self.props.value).padStart(2, '0')
 

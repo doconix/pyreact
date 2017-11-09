@@ -10,6 +10,23 @@ React normally requires Javascript, but you want to instead code in your favorit
 
 This is where `PyReact` and this demo comes in.  **`PyReact = React + Transcrypt`**
 
+## The Finished Product
+
+This demo project makes the following page.  The clock upates every 200 ms and is clickable.
+
+![Screenshot](screenshot.png "Finished Demo")
+
+This demo project shows how to:
+
+* extend the JS `React.Component` class
+* use `.state` from Python
+* create components with `createElement()` as well as with `JSX`
+* set event handlers and callback functions
+* send props to child components
+* use various JS things like `Date()` and a timer
+* use various Python things like list comprehensions and the `random` module
+
+
 ## Installation
 
 Since this is a demo, the goal is few dependencies and setup:

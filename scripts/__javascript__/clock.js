@@ -1,5 +1,5 @@
 "use strict";
-// Transcrypt'ed from Python, 2017-11-09 11:44:58
+// Transcrypt'ed from Python, 2017-11-09 12:29:42
 function clock () {
    var __symbols__ = ['__py3.6__', '__esv6__'];
     var __all__ = {};
