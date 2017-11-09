@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "scripts/__javascript__/clock.mod.js",
+	"sources": [
+		"scripts/clock.py"
+	],
+	"sourcesContent": [
+		"import pyreact\nimport random\n\n\n# Note that using a string for JSX is not optimal - the next step is to have\n# Transcrypt to convert the jsx at transpile time, probably through some type \n# of plugin mechanism.\n\ndef randcolor():\n    return '#{}'.format(''.join([ random.choice('0123456789abcdef') for i in range(6) ]))\n\n\n############################################\n###  A digital clock\n\nclass Clock(pyreact.Component):\n    def __init__(self, props):\n        # very important to call super\n        super().__init__(props)\n        \n        # state dictionary, just like in JS\n        self.state = {\n            'randcolor': randcolor(),\n        }\n    \n    \n    def render(self):\n        # when using .jsx, pyreact places `self` and all Component classes in scope automatically\n        # extra variables, like `color` below, go in the context dictionary or as keyword args.\n        # (yes, I realize {self.state.randcolor} could have been in the jsx - just doing an example :)\n        return self.jsx('''\n            <button className=\"clock\" style={style} onClick={self.on_click}>\n                <ClockNumber key=\"hour\" value={self.props.hour} />\n                :\n                <ClockNumber key=\"minute\" value={self.props.minute} />\n                :\n                <ClockNumber key=\"second\" value={self.props.second} />\n            </button>\n        ''', \n            # as a keyword arg:\n            style={ 'color': self.state.randcolor }\n        )\n        \n        \n    def on_click(self, evt):\n        self.setState({\n            'randcolor': randcolor(),\n        })\n\n\n\n##############################################\n###  A number on a clock\n\nclass ClockNumber(pyreact.Component):\n    # no need for __init__ because not using .state\n\n    def render(self):\n        # example of returning a string directly\n        return str(self.props.value).padStart(2, '0')\n\n"
+	],
+	"mappings": "AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AA2DA;AAAA;AA3DA;AACA;AAOA;AACA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAMA;AACA;AAEA;AAIA;AAAA;AAIA;AAIA;AAAA;AAcA;AAEA;AAAA;AAAA;AAQA;AAGA;AAEA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA"
+}
