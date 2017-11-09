@@ -2,13 +2,13 @@
 
 [React](https://reactjs.org/) is a browser-based, client library that "makes it painless to create interactive UIs".  
 
-React normally requires Javascript, but you want to instead code in your favorite language, Python.  Fortunately for you, [Transcrypt](https://www.transcrypt.org/) places Python (well, transpiled Python) right smack in the browser. But unfortunately:
+Using it normally means you're coding in Javascript, but you want to instead code in our favorite language, Python, amirite?  Fortunately for you, [Transcrypt](https://www.transcrypt.org/) places Python (transpiled Python) right smack in the browser. But then the other shoe drops:
 
 * Extending JS classes (`React.Component`) in Python isn't an obvious thing to do.
 * Using `JSX` in Python isn't an obvious thing to do.  
 * Using React outside of `npm` isn't an obvious thing to do. 
 
-This is where `PyReact` and this demo comes in.  **`PyReact = React + Transcrypt`**
+This is where `PyReact` and this demo come in.  **`PyReact = React + Transcrypt`**
 
 ## The Finished Product
 
