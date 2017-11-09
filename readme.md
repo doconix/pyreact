@@ -5,8 +5,8 @@
 Using it normally means you're coding in Javascript, but you want to instead code in our favorite language, Python, amirite?  Fortunately for you, [Transcrypt](https://www.transcrypt.org/) places Python (transpiled Python) right smack in the browser. But then the other shoe drops:
 
 * Extending JS classes (`React.Component`) in Python isn't an obvious thing to do.
-* Using `JSX` in Python isn't an obvious thing to do.  
-* Using React outside of `npm` isn't an obvious thing to do. 
+* Using `JSX` in Python can be maddening because it means transpiling a transpiled source.
+* Using Python with `Transcrypt` works pretty well, but it has some gotchas. 
 
 This is where `PyReact` and this demo come in.  **`PyReact = React + Transcrypt`**
 
