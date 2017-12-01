@@ -2,10 +2,10 @@
 
 [React](https://reactjs.org/) is a browser-based, client library that "makes it painless to create interactive UIs".  
 
-Using it normally means you're coding in Javascript, but you want to instead code in our favorite language, Python, amirite?  Fortunately for you, [Transcrypt](https://www.transcrypt.org/) places Python (transpiled Python) right smack in the browser. But then the other shoe drops:
+Using this normally means you're coding in Javascript, but you want to instead code in our favorite language, Python, amirite?  Fortunately for you, [Transcrypt](https://www.transcrypt.org/) places Python (transpiled Python) right smack in the browser. But then the other shoe drops:
 
 * Extending JS classes (`React.Component`) in Python isn't an obvious thing to do.
-* Using `JSX` in Python can be maddening because it means transpiling a transpiled source.
+* Using `JSX` in Python can be maddening because it means transpiling a transpile.
 * Using Python with `Transcrypt` works pretty well, but it has some gotchas. 
 
 This is where `PyReact` and this demo come in.  **`PyReact = React + Transcrypt`**
@@ -29,16 +29,15 @@ This demo project shows how to:
 
 ## Installation
 
-Since this is a demo, the goal is few dependencies and setup:
+Since this is a demo, the goal is as few dependencies as possible:
 
 * Download/clone the project.
 * `pip3 install transcrypt livereload`
-* Run `python3 dev_server.py` 
-
-```
-npm install -g jsx-transform-cli
-
-```
+* `npm init` (accept the defaults)
+* `npm install jsx-transform`
+* `cd src`
+* `python3 dev_server.py` 
+* Open `http://localhost:8000/` in your browser.
 
 PyReact also works well within a full React project (npm, webpack, etc.), but that's beyond the scope of this document.
 
@@ -48,20 +47,19 @@ PyReact also works well within a full React project (npm, webpack, etc.), but th
 The project structure is as follows:
 
 ```
-index.html                      # bootstraps React in the <script> elements
-dev_server.py                   # automatically runs transcrypt when needed (optional)
-scripts/
-    index.py                    # Main component of the app
-    clock.py                    # Clock components
-    pyreact.py                  # PyReact superclasses (extend from these)
-scripts/__javascript__/         # Transcrypt puts the transpiled scripts here
-scripts-lib/
-    pyreact-js-bundle.js        # Gateway to the jsx transformer (required)
-script-ext/                     # React sources from reactjs.org (required)
-styles/                         # Plain old css
+src/
+    index.html                      # bootstraps React in the <script> elements
+    dev_server.py                   # automatically runs transcrypt when needed (optional)
+    scripts/
+        index.py                    # Main component of the app
+        clock.py                    # Clock components
+        pyreact.py                  # PyReact superclasses (extend from these)
+    scripts/__javascript__/         # Transcrypt puts the transpiled scripts here
+    script-ext/                     # React sources from reactjs.org (required)
+    styles/                         # Plain old css
 ```
 
-When you create new transcrypt scripts, they should be placed in `scripts/`.  Be sure to reference them in `index.html`.
+When you create new transcrypt scripts, place them in `scripts/`. 
 
 ## Where to Start
 
