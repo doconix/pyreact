@@ -63,7 +63,7 @@ When you create new transcrypt scripts, place them in `scripts/`.
 
 ## Where to Start
 
-Start by reading `scripts/index.py` and `scripts/clock.py`.  These are the primary files of the project.
+Start by reading `src/scripts/index.py` and `src/scripts/clock.py`.  These are the primary files of the project.
 
 
 ## Status and Future
