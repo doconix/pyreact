@@ -35,6 +35,11 @@ Since this is a demo, the goal is few dependencies and setup:
 * `pip3 install transcrypt livereload`
 * Run `python3 dev_server.py` 
 
+```
+npm install -g jsx-transform-cli
+
+```
+
 PyReact also works well within a full React project (npm, webpack, etc.), but that's beyond the scope of this document.
 
 
