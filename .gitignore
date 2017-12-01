@@ -3,3 +3,4 @@ __pycache__/
 *$py.class
 node_modules/
 package-lock.json
+.DS_Store
