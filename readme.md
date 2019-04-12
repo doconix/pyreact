@@ -1,3 +1,6 @@
+** Note: This project was a demo/experiment of using Transcrypt with React. It is not being updated and should not be considered active.**
+
+
 # Welcome to PyReact
 
 [React](https://reactjs.org/) is a browser-based, client library that "makes it painless to create interactive UIs".  
