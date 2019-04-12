@@ -1,4 +1,6 @@
-** Note: This project was a demo/experiment of using Transcrypt with React. It is not being updated and should not be considered active.**
+# Inactive
+
+This project was a demo/experiment of using Transcrypt with React. It is not being updated and should not be considered active.
 
 
 # Welcome to PyReact
